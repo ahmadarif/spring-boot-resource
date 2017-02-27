@@ -15,7 +15,7 @@ public class ApiController {
     @GetMapping("/admin")
     public Map haloApi(){
         Map<String, Object> data = new HashMap<>();
-        data.put("role", "ADMIN");
+        data.put("api", "ADMIN");
         data.put("waktu", new Date().toString());
         return data;
     }
@@ -23,7 +23,7 @@ public class ApiController {
     @GetMapping("/user")
     public Map waktu(){
         Map<String, Object> data = new HashMap<>();
-        data.put("role", "USER");
+        data.put("api", "USER");
         data.put("waktu", new Date().toString());
         return data;
     }
